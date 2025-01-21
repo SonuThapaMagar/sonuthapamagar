@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="bg-dark-background sticky top-0 z-20 mx-auto flex w-full items-center justify-between">
+        <div className="container m-auto px-4 py-4">
+          <div className="flex justify-between items-center w-full">
+            <div>
+              <h1 className="font-bold text-xl">Sonu Thapa Magar</h1>
+            </div>
+            <div>
+              <ul className="flex space-x-6">
+                <li>
+                  <a href="" className="text-gray-400 hover:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-gray-400 hover:text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-gray-400 hover:text-white">
+                    Project
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-gray-400 hover:text-white">
+                    Blogs
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
