@@ -47,7 +47,7 @@ function App() {
       {/* Introduction Section Started */}
       <main>
         <section>
-          <div className="container m-auto px-4 py-10 flex gap-3">
+          <div className="container m-auto my-10 px-4 py-10 flex gap-3">
             <div>
               <h1 className="font-bold text-4xl">Hello, I'm Sonu.</h1>
               <h1 className="font-bold text-4xl mt-1 gradient-text">
@@ -56,10 +56,27 @@ function App() {
               <p className="mt-4 text-gray-400">
                 Tech Enthusiast || Undergraduate University Student{" "}
               </p>
+              {/* Download Resume Button */}
+              <a
+                href="/resume.pdf" // The path to the resume PDF in the public folder
+                download
+                className="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300"
+              >
+                Download Resume
+              </a>
             </div>
             <div className="relative ml-auto">
-              <img src={Profile} alt="Sonu Thapa Magar" width={520} className="relative z-10" />
-              <img src={ProfileBg} alt="" className="absolute top-0 left-10 z-0" />
+              <img
+                src={Profile}
+                alt="Sonu Thapa Magar"
+                width={520}
+                className="relative z-10"
+              />
+              <img
+                src={ProfileBg}
+                alt=""
+                className="absolute top-0 left-10 z-0"
+              />
             </div>
           </div>
         </section>
