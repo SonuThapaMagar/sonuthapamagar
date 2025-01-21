@@ -1,6 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 import Profile from "./assets/sonu.png";
+import ProfileBg from "./assets/Ellipse 1.png";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -41,6 +43,7 @@ function App() {
         </div>
       </header>
       {/* Navbar Ended */}
+
       {/* Introduction Section Started */}
       <main>
         <section>
@@ -54,9 +57,9 @@ function App() {
                 Tech Enthusiast || Undergraduate University Student{" "}
               </p>
             </div>
-            <div className="relative">
-              <img src="{Profile}" alt="Sonu Thapa Magar" width={520} className="relative z-10" />
-              <img src="{Profile" alt="" className="absolute top-0 left-10 z-0" />
+            <div className="relative ml-auto">
+              <img src={Profile} alt="Sonu Thapa Magar" width={520} className="relative z-10" />
+              <img src={ProfileBg} alt="" className="absolute top-0 left-10 z-0" />
             </div>
           </div>
         </section>
