@@ -1,6 +1,5 @@
 import React from "react";
 import Profile from "../assets/sonu.png";
-import ProfileBg from "../assets/Ellipse 1.png";
 
 const Hero = () => {
     return (
@@ -25,19 +24,24 @@ const Hero = () => {
                             Download Resume
                         </a>
                     </div>
-                    <div className="relative ml-auto">
+                    <div className="relative mr-auto">
+                        {/* Image of the person */}
                         <img
                             src={Profile}
                             alt="Sonu Thapa Magar"
-                            width={520}
+                            width={100}
                             className="relative z-10"
                         />
-                        <img
-                            src={ProfileBg}
-                            alt=""
-                            className="absolute top-0 left-10 z-0"
-                        />
+
+                        {/* 3D Ellipses Background */}
+                        <div className="absolute top-0 left-[900px] top-32 z-0 flex justify-center items-center">
+                        {/* Big Ellipse */}
+                            <div className="big-ellipse"></div>
+                            {/* Small Ellipse */}
+                            <div className="small-ellipse"></div>
+                        </div>
                     </div>
+
                 </div>
             </section>
             {/* Introduction Section Ended */}

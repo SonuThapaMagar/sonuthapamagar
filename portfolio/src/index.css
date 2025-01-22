@@ -1,16 +1,69 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color:black;
     font: size 24px;
     color: white;
+    overflow-x: hidden;
 }
 .gradient-text{
     -webkit-background-clip: text;
     @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
 }
+/* Container for the image and ellipses */
+.relative {
+  position: relative;
+}
+.container {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+}
+/* Positioning the 3D Ellipses */
+.big-ellipse, .small-ellipse {
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(25, 154, 224, 0.3);
+  box-shadow: 0 0 60px rgba(28, 3, 3, 0.5);
+}
+
+/* Big Ellipse */
+.big-ellipse {
+  width: 300px;
+  height: 150px;
+  transform: rotate(45deg) scale(1.5);
+  animation: rotateEllipse 5s linear infinite;
+}
+
+/* Small Ellipse */
+.small-ellipse {
+  width: 150px; 
+  height: 75px;
+  transform: rotate(-45deg) scale(1);
+  animation: rotateEllipse 7s linear infinite;
+}
+
+/* Animation to give 3D rotating effect */
+@keyframes rotateEllipse {
+  0% {
+      transform: rotate(45deg) scale(1.5) translateZ(100px);
+  }
+  50% {
+      transform: rotate(-45deg) scale(1.2) translateZ(50px);
+  }
+  100% {
+      transform: rotate(45deg) scale(1.5) translateZ(100px);
+  }
+}
+
 @keyframes glitch {
     0% {
       transform: skew(0.3deg);

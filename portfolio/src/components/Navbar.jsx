@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
-    <header className="bg-dark-background sticky top-0 z-20 mx-auto flex w-full items-center justify-between">
-      <div className="container m-auto px-4 py-4">
+    <header className="bg-dark-background sticky top-0 z-20 mx-auto w-full items-center justify-between overflow-x-hidden">
+      <div className="container mx-auto px-4 py-4 w-full">
         <div className="flex justify-between items-center w-full">
           <div>
             <h1 className="font-bold text-xl">Sonu Thapa Magar</h1>
           </div>
-          <div>
+          <div className="block lg:hidden">
+            <button onClick={toggleMenu} className="text-gray-400 hover:text-white">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+          <div className={`lg:flex space-x-6 ${isMenuOpen ? 'block' : 'hidden'}`}>
             <ul className="flex space-x-6">
               <li>
                 <a href="#home" className="text-gray-400 hover:text-white">
