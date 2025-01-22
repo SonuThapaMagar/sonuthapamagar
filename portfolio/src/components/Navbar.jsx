@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <header className="bg-dark-background sticky top-0 z-20 mx-auto w-full items-center justify-between overflow-x-hidden">
       <div className="container mx-auto px-4 py-4 w-full">
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between items-center w-full my-4">
           <div>
-            <h1 className="font-bold text-xl">Sonu Thapa Magar</h1>
+            <h1 className="font-bold text-xl">m.Sonu</h1>
           </div>
           <div className="block lg:hidden">
             <button onClick={toggleMenu} className="text-gray-400 hover:text-white">

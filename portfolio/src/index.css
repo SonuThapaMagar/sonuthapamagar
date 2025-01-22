@@ -27,43 +27,6 @@ body{
   padding-right: 16px;
 }
 }
-/* Positioning the 3D Ellipses */
-.big-ellipse, .small-ellipse {
-  border-radius: 50%;
-  position: absolute;
-  background: rgba(25, 154, 224, 0.3);
-  box-shadow: 0 0 60px rgba(28, 3, 3, 0.5);
-}
-
-/* Big Ellipse */
-.big-ellipse {
-  width: 300px;
-  height: 150px;
-  transform: rotate(45deg) scale(1.5);
-  animation: rotateEllipse 5s linear infinite;
-}
-
-/* Small Ellipse */
-.small-ellipse {
-  width: 150px; 
-  height: 75px;
-  transform: rotate(-45deg) scale(1);
-  animation: rotateEllipse 7s linear infinite;
-}
-
-/* Animation to give 3D rotating effect */
-@keyframes rotateEllipse {
-  0% {
-      transform: rotate(45deg) scale(1.5) translateZ(100px);
-  }
-  50% {
-      transform: rotate(-45deg) scale(1.2) translateZ(50px);
-  }
-  100% {
-      transform: rotate(45deg) scale(1.5) translateZ(100px);
-  }
-}
-
 @keyframes glitch {
     0% {
       transform: skew(0.3deg);
@@ -94,10 +57,10 @@ body{
   .glitch {
     position: relative;
     display: inline-block;
-    animation: glitch 1.5s infinite linear alternate-reverse;
+    animation: glitch 5.5s infinite linear alternate-reverse;
   }
   
   .animate-glitch {
-    animation: glitch 1.5s infinite linear alternate-reverse;
+    animation: glitch 5.5s infinite linear alternate-reverse;
   }
   
