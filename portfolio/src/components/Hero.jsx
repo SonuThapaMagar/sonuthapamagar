@@ -38,32 +38,52 @@ const Hero = () => {
         </div>
       </section>
       {/* Introduction Section Ended */}
-      {/* <section>
-                <div className="container m-auto flex flex-col items-center justify-center min-h-screen text-center">
-                    <div className="glitch animate-glitch animate-noiseAfter relative font-geologica font-bold text-white z-10 tracking-tight text-4xl whitespace-nowrap" data-text="Who is Sonu?">
-                        Who is Sonu?
-                    </div>
-                    <div className="row flex">
-                    <h1 className="mt-4 text-2xl font-semibold text-white">
-                        Future <span className="font-bold text-blue-400">Software Engineer</span>
-                    </h1>
-                    <p className="mt-4 text-lg text-gray-300">
-                        I'm an Undergraduate <span className="font-bold text-blue-400">Tech Enthusiastic Student</span> who is keen about learning new <span className="font-bold text-blue-400">technologies</span>.
-                    </p>
-                    <p className="mt-4 text-lg text-gray-300">
-                        I aspire to become a <span className="font-bold text-blue-500">Software Engineer</span>, focusing on <span className="font-bold text-yellow-400">Frontend Development</span> and <span className="font-bold text-blue-500">Backend Development</span> in the future.
-                    </p>
-                    </div>
-                    <div className="row flex">
-                        <h1>hello</h1>
-                    </div>
-                </div>
-
-                <div className="m-auto connect">
-                    <h1 className="font-san-serif font-bold text-color-white text-4xl text-center py-4 mb-4 mt-0">Connect Me</h1>
-
-                </div>
-            </section> */}
+      {
+        <section>
+          <div className="container m-auto flex flex-col items-center justify-center min-h-screen text-center">
+            <div
+              className="glitch animate-glitch animate-noiseAfter relative font-geologica font-bold text-white z-10 tracking-tight text-4xl whitespace-nowrap"
+              data-text="Who is Sonu?"
+            >
+              Who is Sonu?
+            </div>
+            <div className="row flex">
+              <h1 className="mt-4 text-2xl font-semibold text-white">
+                Future{" "}
+                <span className="font-bold text-blue-400">
+                  Software Engineer
+                </span>
+              </h1>
+              <p className="mt-4 text-lg text-gray-300">
+                I'm an Undergraduate{" "}
+                <span className="font-bold text-blue-400">
+                  Tech Enthusiastic Student
+                </span>{" "}
+                who is keen about learning new{" "}
+                <span className="font-bold text-blue-400">technologies</span>.
+              </p>
+              <p className="mt-4 text-lg text-gray-300">
+                I aspire to become a{" "}
+                <span className="font-bold text-blue-500">
+                  Software Engineer
+                </span>
+                , focusing on{" "}
+                <span className="font-bold text-yellow-400">
+                  Frontend Development
+                </span>{" "}
+                and{" "}
+                <span className="font-bold text-blue-500">
+                  Backend Development
+                </span>{" "}
+                in the future.
+              </p>
+            </div>
+            <div className="row flex">
+              <h1>hello</h1>
+            </div>
+          </div>
+        </section>
+      }
       <div className="flex justify-center mx-auto">
         <div>
           <h1 className="text-4xl font-bold font-Montserrat py-4 mx-auto">
@@ -119,7 +139,8 @@ const Hero = () => {
       {/* Footer Section */}
       <footer className="bg-gray-900 text-gray-400 py-6 text-center">
         <p className="text-sm">
-          &copy;{new Date().getFullYear()} Sonu Thapa Magar. All rights reserved.
+          &copy;{new Date().getFullYear()} Sonu Thapa Magar. All rights
+          reserved.
         </p>
       </footer>
     </main>
