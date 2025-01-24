@@ -6,10 +6,11 @@ const Hero = () => {
         <main>
             {/* Introduction Section Started */}
             <section>
-                <div className="container m-auto my-10 px-4 flex gap-3">
-                    <div>
-                        <h1 className="font-bold text-4xl">Hello, I'm .</h1>
-                        <h1 className="font-bold text-4xl mt-1 gradient-text">
+                <div className="container m-32 my-10 px-4 flex flex-col lg:flex-row items-center gap-4">
+                    {/* Left Content */}
+                    <div className="lg:w-1/2 text-center lg:text-left space-y-4">
+                        <h1 className="font-bold text-4xl">Hello, I'm</h1>
+                        <h1 className="font-bold text-6xl py-3 gradient-text">
                             Sonu Thapa Magar
                         </h1>
                         <p className="mt-4 text-gray-400">
@@ -24,12 +25,20 @@ const Hero = () => {
                             Download Resume
                         </a>
                     </div>
+
+                    {/* Right Image */}
+                    <div className="lg:w-1/2 flex justify-center">
+                        <img
+                            src={Profile}
+                            alt="Sonu Thapa Magar"
+                            className="w-full max-w-sm lg:max-w-md object-cover rounded-lg shadow-lg"
+                        />
+                    </div>
                 </div>
             </section>
             {/* Introduction Section Ended */}
-            <section>
+            {/* <section>
                 <div className="container m-auto flex flex-col items-center justify-center min-h-screen text-center">
-                    {/* Glitch animation for name */}
                     <div className="glitch animate-glitch animate-noiseAfter relative font-geologica font-bold text-white z-10 tracking-tight text-4xl whitespace-nowrap" data-text="Who is Sonu?">
                         Who is Sonu?
                     </div>
@@ -53,7 +62,7 @@ const Hero = () => {
                     <h1 className="font-san-serif font-bold text-color-white text-4xl text-center py-4 mb-4 mt-0">Connect Me</h1>
 
                 </div>
-            </section>
+            </section> */}
         </main>
     );
 };
