@@ -80,7 +80,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white-600 hover:text-blue-300 transition duration-300"
             >
-              <FaLinkedin size={40} />
+              <FaLinkedin size={30} />
             </a>
 
             {/* GitHub */}
@@ -90,7 +90,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white-800 hover:text-blue-300 transition duration-300"
             >
-              <FaGithub size={40} />
+              <FaGithub size={30} />
             </a>
 
             {/* Instagram */}
@@ -100,7 +100,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white-800 hover:text-blue-300  transition duration-300"
             >
-              <FaInstagram size={40} />
+              <FaInstagram size={30} />
             </a>
 
             {/* Facebook */}
@@ -110,7 +110,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-white-800 hover:text-blue-300  transition duration-300"
             >
-              <FaFacebook size={40} />
+              <FaFacebook size={30} />
             </a>
           </div>
         </div>
