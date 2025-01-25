@@ -23,10 +23,6 @@ function App() {
         <Navbar />
         {/* Hero Section */}
         <Hero />
-        {/* Footer */}
-        <footer className="p-8 text-center text-white">
-          <p>&copy; 2025 Sonu Thapa Magar. All rights reserved.</p>
-        </footer>
       </div>
     </>
   );
