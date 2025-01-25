@@ -3,11 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const TwinklingStars = () => {
-    const stars = Array.from({ length: 50 }, (_, i) => ({
+    const stars = Array.from({ length: 140 }, (_, i) => ({
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
         opacity: Math.random(),
-        size: Math.random() * 4 + 1,
+        size: Math.random() * 3 + 1,
     }));
 
     return (

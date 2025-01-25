@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="sticky h-10vh flex justify-between items-center z-50 text-white lg:py-2 px-5 py-0 ">
+      <div className="fixed top-0 w-full h-16vh flex justify-between items-center z-50lg:py-2 px-5 py-0 bg-slate-900 text-white shadow-lg ">
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold px-4">m.Sonu</span>
         </div>
