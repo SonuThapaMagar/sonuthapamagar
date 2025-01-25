@@ -82,10 +82,10 @@ const Hero = () => {
       </section>
 
       {/* Connect Section */}
-      <div className="py-8 mb-8 ">
-        <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12">
+      <div className="py-8 mb-8">
+        <div className="container mx-auto px-4 flex flex-col items-center gap-6">
           {/* Text Section */}
-          <div className="text-center sm:text-left">
+          <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold font-Montserrat py-4">
               <span className="gradient-text">CONNECT</span> ME ON
             </h1>
@@ -96,7 +96,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links Section */}
-          <div className="flex justify-center sm:justify-start gap-6 sm:gap-8 py-4">
+          <div className="flex flex-row sm:flex-row justify-center sm:justify-start gap-6 py-4">
             {/* Social Links */}
             <a
               href="https://www.linkedin.com/in/sonu-thapa-magar-b281b8275/"
