@@ -1,5 +1,7 @@
 import React from "react";
 import Profile from "../assets/sonu.png";
+import ProfileImg from "../assets/sonu1.jpg";
+
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
@@ -41,30 +43,28 @@ const Hero = () => {
 
       {/* About Myself */}
       <section>
-        <div className="flex flex-col lg:flex-row items-center gap-8 p-8 m-32 my-20 px-4">
+        <div className="flex flex-col lg:flex-row items-center gap-24 p-8 m-32 my-20 px-4">
           {/* Left Column for h1 */}
-          <div className="lg:w-1/2 text-left">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+            <img
+              src={ProfileImg}
+              alt="Sonu Thapa Magar"
+              className="w-96 h-96 object-cover mr-24 rounded-full border-4 border-gray-300 shadow-lg"
+            />
+          </div>
+          {/* Right Column for Text */}
+          <div className="lg:w-1/2 text-left space-y-4 mr-24">
             <h1 className="text-5xl font-bold font-sans text-white-800 mb-2">
               Nice to <span className="gradient-text">meet you.</span>
             </h1>
             <h1 className="text-3xl font-bold font-sans text-white-800">
               Please take a <span className="gradient-text">look</span> around!
             </h1>
-          </div>
-          {/* Right Column for p */}
-          <div className="lg:w-1/2 text-left">
-            {/* <p className="text- text-xl text-gray-300 leading-relaxed text-justify">
-              I'm an enthusiastic undergraduate tech student, eager to learn and
-              grow in the world of{" "}
-              <span className="gradient-text">software development.</span>
-            </p> */}
-
             <p className="font-semibold text-xl text-gray-300 leading-relaxed text-justify">
               I discovered my passion for{" "}
               <span className="gradient-text">programming </span>unexpectedly
               and have been captivated ever since.
             </p>
-            <br />
             <p className="font-semibold text-xl text-gray-300 leading-relaxed text-justify">
               Proficient in{" "}
               <span className="gradient-text">
