@@ -7,7 +7,7 @@ const Hero = () => {
     <main>
       {/* Introduction Section Started */}
       <section>
-        <div className="container m-32 my-10 px-4 flex flex-col lg:flex-row items-center gap-4">
+        <div className="container m-32 my-14 px-4 py-10 flex flex-col lg:flex-row items-center gap-4">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left space-y-4">
             <h1 className="font-bold text-4xl">Hello, I'm</h1>
@@ -38,52 +38,45 @@ const Hero = () => {
         </div>
       </section>
       {/* Introduction Section Ended */}
-      {
-        <section>
-          <div className="container m-auto flex flex-col items-center justify-center min-h-screen text-center">
-            <div
-              className="glitch animate-glitch animate-noiseAfter relative font-geologica font-bold text-white z-10 tracking-tight text-4xl whitespace-nowrap"
-              data-text="Who is Sonu?"
-            >
-              Who is Sonu?
-            </div>
-            <div className="row flex">
-              <h1 className="mt-4 text-2xl font-semibold text-white">
-                Future{" "}
-                <span className="font-bold text-blue-400">
-                  Software Engineer
-                </span>
-              </h1>
-              <p className="mt-4 text-lg text-gray-300">
-                I'm an Undergraduate{" "}
-                <span className="font-bold text-blue-400">
-                  Tech Enthusiastic Student
-                </span>{" "}
-                who is keen about learning new{" "}
-                <span className="font-bold text-blue-400">technologies</span>.
-              </p>
-              <p className="mt-4 text-lg text-gray-300">
-                I aspire to become a{" "}
-                <span className="font-bold text-blue-500">
-                  Software Engineer
-                </span>
-                , focusing on{" "}
-                <span className="font-bold text-yellow-400">
-                  Frontend Development
-                </span>{" "}
-                and{" "}
-                <span className="font-bold text-blue-500">
-                  Backend Development
-                </span>{" "}
-                in the future.
-              </p>
-            </div>
-            <div className="row flex">
-              <h1>hello</h1>
-            </div>
+
+      {/* About Myself */}
+      <section>
+        <div className="flex flex-col lg:flex-row items-center gap-8 p-8 m-32 my-20 px-4">
+          {/* Left Column for h1 */}
+          <div className="lg:w-1/2 text-left">
+            <h1 className="text-5xl font-bold font-sans text-white-800 mb-2">
+              Nice to <span className="gradient-text">meet you.</span>
+            </h1>
+            <h1 className="text-3xl font-bold font-sans text-white-800">
+              Please take a <span className="gradient-text">look</span> around!
+            </h1>
           </div>
-        </section>
-      }
+          {/* Right Column for p */}
+          <div className="lg:w-1/2 text-left">
+            {/* <p className="text- text-xl text-gray-300 leading-relaxed text-justify">
+              I'm an enthusiastic undergraduate tech student, eager to learn and
+              grow in the world of{" "}
+              <span className="gradient-text">software development.</span>
+            </p> */}
+
+            <p className="font-semibold text-xl text-gray-300 leading-relaxed text-justify">
+              I discovered my passion for{" "}
+              <span className="gradient-text">programming </span>unexpectedly
+              and have been captivated ever since.
+            </p>
+            <br />
+            <p className="font-semibold text-xl text-gray-300 leading-relaxed text-justify">
+              Proficient in{" "}
+              <span className="gradient-text">
+                HTML, CSS, JavaScript, React,
+              </span>{" "}
+              and<span className="gradient-text"> Tailwind CSS.</span> I have
+              hands-on experience building responsive and user-friendly
+              interfaces, and I’m continuously working to refine my expertise.
+            </p>
+          </div>
+        </div>
+      </section>
       <div className="flex justify-center mx-auto">
         <div>
           <h1 className="text-4xl font-bold font-Montserrat py-4 mx-auto">
