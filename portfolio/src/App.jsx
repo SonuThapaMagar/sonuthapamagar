@@ -1,13 +1,13 @@
 // src/App.jsx
-import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import React, { useState } from "react";
 
 // Import Components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Project from "./components/Project"; // Import the Project component
-
+import Project from "./components/Project"; 
 // Importing TwinklingStars
 import TwinklingStars from "./components/Animation";
 
@@ -26,7 +26,7 @@ function App() {
         {/* Navbar */}
         <Navbar />
         {/* Hero Section */}
-        <Home />
+        <Navbar />
 
         {/* Define Routes */}
         <Routes>
