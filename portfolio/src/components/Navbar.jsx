@@ -70,7 +70,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {click && (
         <div className="lg:hidden bg-slate-900">
-          <ul className="flex flex-col text-center py-4 space-y-2">
+          <ul className="flex flex-col text-center text-sm py-4 space-y-2">
             <li>
               <Link to="/" onClick={handleClick} className="hover:text-blue-600 transition cursor-pointer">
                 Home
