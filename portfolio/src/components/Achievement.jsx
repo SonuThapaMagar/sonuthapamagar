@@ -48,8 +48,7 @@ const Achievement = () => {
                 {achievements.map((achievement, index) => (
                     <div
                         key={achievement.id}
-                        className={`flex flex-col md:flex-row items-center gap-8 py-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                            }`}
+                        className={`flex flex-col md:flex-row items-center gap-8 py-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
                     >
                         {/* Image Section */}
                         <div className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:ml-12" : "md:mr-12"}`}>
