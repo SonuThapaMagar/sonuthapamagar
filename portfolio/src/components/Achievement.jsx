@@ -62,8 +62,12 @@ const Achievement = () => {
 
                         {/* Content Section */}
                         <div className="w-full md:w-1/2 flex flex-col justify-center">
-                            <h3 className="text-2xl font-semibold">{achievement.title} - {achievement.year}</h3>
-                            <p className="mt-3">{achievement.description}</p>
+                            <h3 className="text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                                {achievement.title} - {achievement.year}
+                            </h3>
+                            <p className="mt-2 text-lg text-gray-300 leading-relaxed">
+                                {achievement.description}
+                            </p>
                             <a href={achievement.link} target='_blank' rel="noopener noreferrer">
                                 <button className="mt-4 px-5 py-2 text-white rounded bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-700 hover:to-purple-700 transition">
                                     Learn More
