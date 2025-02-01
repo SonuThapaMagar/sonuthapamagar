@@ -26,9 +26,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full text-white shadow-lg z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-md" : "" // apply blur when scrolled
-      }`}
+      className={`fixed top-0 left-0 w-full text-white shadow-lg z-50 transition-all duration-300 ${scrolled ? "backdrop-blur-md" : "" // apply blur when scrolled
+        }`}
     >
       <div className="container mx-auto flex items-center justify-between px-5 py-4">
         {/* Logo */}
@@ -52,8 +51,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/blogs" className="cursor-pointer hover:text-blue-600 transition">
-              Blogs
+            <Link to="/achievement" className="cursor-pointer hover:text-blue-600 transition">
+              Achievement
             </Link>
           </li>
         </ul>
@@ -88,8 +87,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/blogs" onClick={handleClick} className="hover:text-blue-600 transition cursor-pointer">
-                Blogs
+              <Link to="/achievement" className="cursor-pointer hover:text-blue-600 transition">
+                Achievement
               </Link>
             </li>
           </ul>

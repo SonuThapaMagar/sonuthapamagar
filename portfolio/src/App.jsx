@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project"; 
+import Achievement from "./components/Achievement"; 
+
 // Importing TwinklingStars
 import TwinklingStars from "./components/Animation";
 
@@ -32,7 +34,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Project />} /> {/* Add route for Project */}
+          <Route path="/projects" element={<Project />} />
+          <Route path="/achievement" element={<Achievement />} />
         </Routes>
         </div>
       </div>
