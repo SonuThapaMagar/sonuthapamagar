@@ -1,16 +1,16 @@
 import React from 'react'
-import about from "../assets/about.png";
+import sonu from "../assets/sonu.png";
 
 const About = () => {
   return (
-    <section className="mt-16 px-8">
+    <section className="mt-16 px-2">
       {/* Title */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold font-sans">WHO <strong className="gradient-text"> I'M</strong></h1>
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between  max-w-5xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between  max-w-7xl mx-auto">
         {/* Left Side (Text Content) */}
         <div className="md:w-1/2">
           <p className="mt-4">
@@ -43,7 +43,7 @@ const About = () => {
         {/* Right Side (Image) */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src={about}
+            src={sonu}
             alt="About Me"
             className="w-full md:w-[80%] rounded-lg shadow-lg"
           />
