@@ -27,13 +27,14 @@ function App() {
         <Navbar />
         {/* Hero Section */}
         <Navbar />
-
+        <div className="pt-20">
         {/* Define Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Project />} /> {/* Add route for Project */}
         </Routes>
+        </div>
       </div>
     </Router>
   );
