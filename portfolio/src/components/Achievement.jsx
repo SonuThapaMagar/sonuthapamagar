@@ -1,8 +1,9 @@
-import React from 'react'
-import deerImg from "../assets/deer.jpg"
-import hackImg from "../assets/hacks.jpg"
-import kusomImg from "../assets/kusom.jpg"
-import techImg from "../assets/tech.jpg"
+import React from 'react';
+import deerImg from "../assets/deer.jpg";
+import hackImg from "../assets/hacks.jpg";
+import kusomImg from "../assets/kusom.jpg";
+import techImg from "../assets/tech.jpg";
+
 const achievements = [
     {
         id: 1,
@@ -23,7 +24,7 @@ const achievements = [
     {
         id: 3,
         title: "KUSOM IS Hackathon - Runner Up",
-        description:"Awarded Runner Up at the KUSOM IS Hackathon for presenting an innovative IoT-based Solid Waste Management project, helping improve waste management efficiency using modern technology.",
+        description: "Awarded Runner Up at the KUSOM IS Hackathon for presenting an innovative IoT-based Solid Waste Management project, helping improve waste management efficiency using modern technology.",
         year: "2024",
         image: kusomImg,
         link: "https://www.linkedin.com/in/sonu-thapa-magar-b281b8275/recent-activity/all/",
@@ -31,39 +32,49 @@ const achievements = [
     {
         id: 4,
         title: "Girls in Tech - 5-Day IoT Workshop",
-        description:"Attended a 5-day IoT workshop by Girls in Robotics and AI, hosted by Miss Tech and the Robotics Association of Nepal. Gained hands-on experience in robotics, AI, electronics, drone simulation, and 3D printing.",
+        description: "Attended a 5-day IoT workshop by Girls in Robotics and AI, hosted by Miss Tech and the Robotics Association of Nepal. Gained hands-on experience in robotics, AI, electronics, drone simulation, and 3D printing.",
         year: "2024",
         image: techImg,
         link: "https://www.linkedin.com/in/sonu-thapa-magar-b281b8275/recent-activity/all/",
     },
-    
-]
+];
+
 const Achievement = () => {
     return (
-        <section className='mt-12 mx-auto max-w-6xl px-0'>
-            <h2 className='text-4xl font-bold text-center mb-8 gradient-text'>Achievements</h2>
+        <section className='mt-12 mx-auto max-w-7xl px-6 md:px-12'>
+            <h2 className='text-4xl font-bold text-center mb-12 gradient-text'>Achievements</h2>
 
-            <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                {achievements.map((achievement) => (
-                    <div key={achievement.id} className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
+            <div className="flex flex-col gap-16 mb-8">
+                {achievements.map((achievement, index) => (
+                    <div
+                        key={achievement.id}
+                        className={`flex flex-col md:flex-row items-center gap-8 py-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                            }`}
+                    >
                         {/* Image Section */}
-                        <img
-                            src={achievement.image}
-                            alt={achievement.title}
-                            className="w-full h-48 object-cover rounded-t-lg mb-4"
-                        />
-                        <h3 className="text-xl font-semibold">{achievement.title} - {achievement.year}</h3>
-                        <p className="mt-2 text-sm text-justify">{achievement.description}</p>
-                        <a href={achievement.link} target='_blank' rel="noopener noreferrer">
-                            <button className="text-sm mt-4 px-4 py-2 text-white bg-gray-400 rounded-md hover:bg-blue-700 transition">
-                                Learn More
-                            </button>
-                        </a>
+                        <div className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:ml-12" : "md:mr-12"}`}>
+                            <img
+                                src={achievement.image}
+                                alt={achievement.title}
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="w-full md:w-1/2 flex flex-col justify-center">
+                            <h3 className="text-2xl font-semibold">{achievement.title} - {achievement.year}</h3>
+                            <p className="mt-3">{achievement.description}</p>
+                            <a href={achievement.link} target='_blank' rel="noopener noreferrer">
+                                <button className="mt-4 px-5 py-2 text-white rounded bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-700 hover:to-purple-700 transition">
+                                    Learn More
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Achievement
+export default Achievement;

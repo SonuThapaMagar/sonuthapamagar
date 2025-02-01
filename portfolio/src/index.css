@@ -17,6 +17,7 @@ body{
     -webkit-background-clip: text;
     @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
 }
+
 /* Container for the image and ellipses */
 .relative {
   position: relative;
@@ -31,42 +32,6 @@ body{
   padding-right: 16px;
 }
 }
-@keyframes glitch {
-    0% {
-      transform: skew(0.3deg);
-      text-shadow: 2px 2px 0 red, -2px -2px 0 blue;
-    }
-    20% {
-      transform: skew(0.1deg);
-      text-shadow: -2px -2px 0 red, 2px 2px 0 blue;
-    }
-    40% {
-      transform: skew(0.2deg);
-      text-shadow: 2px 2px 0 red, -2px -2px 0 blue;
-    }
-    60% {
-      transform: skew(0.3deg);
-      text-shadow: -2px -2px 0 red, 2px 2px 0 blue;
-    }
-    80% {
-      transform: skew(0.1deg);
-      text-shadow: 2px 2px 0 red, -2px -2px 0 blue;
-    }
-    100% {
-      transform: skew(0.3deg);
-      text-shadow: -2px -2px 0 red, 2px 2px 0 blue;
-    }
-  }
-  
-  .glitch {
-    position: relative;
-    display: inline-block;
-    animation: glitch 5.5s infinite linear alternate-reverse;
-  }
-  
-  .animate-glitch {
-    animation: glitch 5.5s infinite linear alternate-reverse;
-  }
   /* Custom blur and background transparency */
 nav {
   background: rgba(12, 12, 12, 0.7); 
