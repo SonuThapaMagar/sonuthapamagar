@@ -1,5 +1,10 @@
 import React from 'react'
 import sonu from "../assets/sonu.png";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
+
+const techStack = [
+  { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+]
 
 const About = () => {
   return (
@@ -49,7 +54,21 @@ const About = () => {
           />
         </div>
       </div>
+
+      {/* Tech Stack Section */}
+      <div className="mt-16 max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">Tech Stack & Tools</h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          {techStack.map((tech, index) => (
+            <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-105 transition">
+              <div className="text-5xl">{tech.icon}</div>
+              <p className="mt-2 text-lg font-semibold">{tech.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
+
   )
 }
 
