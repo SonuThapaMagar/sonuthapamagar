@@ -134,13 +134,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
-      <footer className=" text-gray-400 py-6 text-center">
-        <p className="text-sm">
-          &copy;{new Date().getFullYear()} Sonu Thapa Magar. All rights
-          reserved.
-        </p>
-      </footer>
     </main>
   );
 };

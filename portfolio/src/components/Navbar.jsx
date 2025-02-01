@@ -1,17 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [scrolled, setScrolled] = useState(false); // state to track scroll position
 
   const handleClick = () => {
     setClick(!click);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
+    <nav
+      className={`fixed top-0 left-0 w-full text-white shadow-lg z-50 transition-all duration-300 ${
+        scrolled ? "backdrop-blur-md" : "" // apply blur when scrolled
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between px-5 py-4">
         {/* Logo */}
         <div className="text-3xl font-bold">m.Sonu</div>

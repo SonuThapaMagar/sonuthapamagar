@@ -1,25 +1,31 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
-import portfolioImg from "../assets/portfolio.png"
-import weatherImg from "../assets/weather.png"
-
-
+import portfolioImg from "../assets/portfolio.png";
+import weatherImg from "../assets/weather.png";
+import zestImg from "../assets/zest.png";
 
 const projects = [
   {
     id: 1,
     title: "Personal Portfolio",
-    description: "A personal portfolio built with React and Tailwind CSS.",
+    description: "A sleek portfolio built with React and Tailwind CSS to showcase my skills and projects.",
     github: "https://github.com/SonuThapaMagar/Portfolio",
     image: portfolioImg,
   },
   {
     id: 2,
     title: "Weather App",
-    description: "Fetches real-time weather data based on location.",
+    description: "A real-time weather app that provides location-based weather updates with a clean and simple interface.",
     github: "https://github.com/SonuThapaMagar/weatherApp",
     image: weatherImg,
+  },
+  {
+    id: 3,
+    title: "Zest Fitness",
+    description: "A fitness app designed to help users track their progress, set goals, and stay motivated with a smooth, interactive experience.",
+    github: "https://github.com/SonuThapaMagar/Zest-Fitness",
+    image: zestImg,
   },
 ];
 
@@ -34,7 +40,7 @@ const Project = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="p-6 border-2 border-black-300 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:border-blue-500 hover:shadow-xl"
+            className="p-6 border-2 border-gray-300 shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:border-blue-500 hover:shadow-xl flex flex-col justify-between"
           >
             {/* Image Section */}
             <img
@@ -43,16 +49,19 @@ const Project = () => {
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-300 mt-2">{project.description}</p>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-full mt-4"
-            >
-              <FaGithub className="mr-2" /> {/* GitHub Icon */}
-              GitHub
-            </a>
+            <p className="text-gray-300 mt-2 text-base">{project.description}</p>
+
+            <div className="mt-4">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gray-700 text-white hover:bg-gray-900 px-3 py-1.5 rounded-full text-sm"
+              >
+                <FaGithub className="mr-2 text-base" /> {/* Smaller GitHub Icon */}
+                GitHub
+              </a>
+            </div>
           </div>
         ))}
       </div>
