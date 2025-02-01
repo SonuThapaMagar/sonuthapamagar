@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import sonu from "../assets/sonu.png";
-import { FaHtml5, FaFigma, FaCss3Alt, FaJs, FaReact, FaJava, FaGitAlt, FaGithub, FaPython, FaJira, } from "react-icons/fa";
+import { FaHtml5, FaFigma, FaCss3Alt, FaJs, FaReact, FaJava, FaGitAlt, FaGithub, FaPython, FaJira } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { SiTailwindcss } from "react-icons/si";
-
 
 const techStack = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -20,7 +19,6 @@ const tools = [
   { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
   { name: "Figma", icon: <FaFigma className="text-purple-500" /> },
   { name: "Jira", icon: <FaJira className="text-blue-700" /> },
-
 ];
 
 const About = () => {
@@ -36,71 +34,82 @@ const About = () => {
       {/* Content Section */}
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-7xl mx-auto">
         {/* Left Side (Text Content) */}
-        <div className="md:w-1/2 font-inter  leading-relaxed">
-          <p className="mt-4 text-lg">
-            Hello Everyone! I'm <strong className='gradient-text text-xl'>Sonu Thapa Magar.</strong>
+        <div className="md:w-1/2 font-inter leading-relaxed">
+          <p className="mt-4 text-3xl">
+            Hello Everyone! I'm <strong className='gradient-text'>Sonu Thapa Magar.</strong>
           </p>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-2xl">
             I'm an undergraduate software engineering student aspiring to become a software engineer.
+
           </p>
+          <p className="mt-4 text-2xl">
+            I’m passionate about both <strong className='gradient-text text-xl'>Frontend & Backend Development</strong>, always eager to learn new technologies.
+          </p>
+          {/* <p className="mt-4 text-lg">
+            💡 I love building innovative & user-friendly applications that can solve real-world problems.
+          </p> */}
+
 
           <h2 className="text-2xl font-semibold mt-6">Beyond Tech, I Enjoy:</h2>
-          <ul className="mt-4 space-y-3 font-medium">
-            <li className="flex items-center gap-3 text-lg">
-              🎤 <span>Singing</span>
+          <ul className="mt-4 text-xl space-y-2">
+            <li className="flex items-center">
+              <span className="text-cyan-500 text-xl mr-2">★</span> Singing
             </li>
-            <li className="flex items-center gap-3 text-lg">
-              ✈️ <span>Traveling</span>
+            <li className="flex items-center">
+              <span className="text-cyan-500 text-xl mr-2">★</span> Traveling
             </li>
-            <li className="flex items-center gap-3 text-lg">
-              🎨 <span>Drawing</span>
+            <li className="flex items-center">
+              <span className="text-cyan-500 text-xl mr-2">★</span> Drawing
             </li>
-            <li className="flex items-center gap-3 text-lg">
-              🧵 <span>Handicrafts</span>
+            <li className="flex items-center">
+              <span className="text-cyan-500 text-xl mr-2">★</span> Handicrafts
             </li>
-            <li className="flex items-center gap-3 text-lg">
-              👗 <span>Fashion</span>
+            <li className="flex items-center">
+              <span className="text-cyan-500 text-xl mr-2">★</span> Fashion
             </li>
           </ul>
+          <p className="mt-4 text-2xl">
+            I believe in maintaining a balanced life by indulging in creative hobbies.
+          </p>
         </div>
-      {/* Right Side (Image) */}
-      <div className="md:w-1/2 flex justify-center">
-        <img
-          src={sonu}
-          alt="About Me"
-          className="w-full md:w-[80%] rounded-lg shadow-lg"
-        />
+
+        {/* Right Side (Image) */}
+        <div className="md:w-1/2 flex justify-center">
+          <img
+            src={sonu}
+            alt="About Me"
+            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-md object-cover rounded-lg shadow-lg"
+          />
+        </div>
       </div>
-    </div>
 
-      {/* Tech Stack Section */ }
-  <div className="mt-16 max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-6"><strong className='gradient-text'>Tech</strong> Stack</h2>
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-      {techStack.map((tech, index) => (
-        <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-105 transition">
-          <div className="text-5xl">{tech.icon}</div>
-          <p className="mt-2 text-lg font-semibold">{tech.name}</p>
+      {/* Tech Stack Section */}
+      <div className="mt-16 max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6"><strong className='gradient-text'>Tech</strong> Stack</h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          {techStack.map((tech, index) => (
+            <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-105 transition">
+              <div className="text-5xl">{tech.icon}</div>
+              <p className="mt-2 text-lg font-semibold">{tech.name}</p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
+      </div>
 
-  {/* Tools Section */ }
-  <div className="mt-16 max-w-6xl mx-auto text-center mb-12">
-    <h2 className="text-3xl font-bold mb-6"><strong className='gradient-text'>Tools</strong></h2>
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-      {tools.map((tool, index) => (
-        <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-105 transition">
-          <div className="text-5xl">{tool.icon}</div>
-          <p className="mt-2 text-lg font-semibold">{tool.name}</p>
+      {/* Tools Section */}
+      <div className="mt-16 max-w-6xl mx-auto text-center mb-12">
+        <h2 className="text-3xl font-bold mb-6"><strong className='gradient-text'>Tools</strong></h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          {tools.map((tool, index) => (
+            <div key={index} className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-105 transition">
+              <div className="text-5xl">{tool.icon}</div>
+              <p className="mt-2 text-lg font-semibold">{tool.name}</p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-    </section >
-
-  )
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;
