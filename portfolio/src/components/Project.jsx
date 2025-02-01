@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import portfolioImg from "../assets/portfolio.png";
 import weatherImg from "../assets/weather.png";
 import zestImg from "../assets/zest.png";
+import rideImg from "../assets/ride.png";
 
 const projects = [
   {
@@ -26,6 +27,13 @@ const projects = [
     description: "A fitness app designed to help users track their progress, set goals, and stay motivated with a smooth, interactive experience.",
     github: "https://github.com/SonuThapaMagar/Zest-Fitness",
     image: zestImg,
+  },
+  {
+    id: 4,
+    title: "Ride Rental",
+    description: "A ride rental app to which allow the user to rent and ride bike or scooter on their own freedom.",
+    github: "https://github.com/SonuThapaMagar/RideRental",
+    image: rideImg,
   },
 ];
 

@@ -69,7 +69,7 @@ const Achievement = () => {
                                 {achievement.description}
                             </p>
                             <a href={achievement.link} target='_blank' rel="noopener noreferrer">
-                                <button className="mt-4 px-5 py-2 text-white rounded bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-700 hover:to-purple-700 transition">
+                                <button className="mt-4 px-3 py-1.5 text-sm text-white rounded bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-700 hover:to-purple-700 transition">
                                     Learn More
                                 </button>
                             </a>

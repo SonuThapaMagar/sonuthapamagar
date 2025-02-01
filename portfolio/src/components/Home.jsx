@@ -86,7 +86,7 @@ const Home = () => {
         <div className="container mx-auto px-4 flex flex-col items-center gap-6">
           {/* Text Section */}
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold font-Montserrat py-4">
+            <h1 className="text-3xl sm:text-4xl font-bold font-Montserrat py-4">
               <span className="gradient-text">CONNECT</span> ME ON
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300">
