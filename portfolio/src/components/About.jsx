@@ -36,17 +36,17 @@ const About = () => {
       <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between max-w-7xl mx-auto">
         {/* Left Side (Text Content) */}
         <div className="md:w-1/2 font-inter leading-relaxed px-4">
-          <p className="mt-4 text-3xl md:text-4xl">
+          <p className="mt-4 text-2xl md:text-3xl">
             Hello Everyone! I'm <strong className='gradient-text'>Sonu Thapa Magar.</strong>
           </p>
-          <p className="mt-4 text-2xl md:text-3xl">
+          <p className="mt-4 text-xl md:text-2xl">
             I'm an undergraduate software engineering student aspiring to become a software engineer.
           </p>
-          <p className="mt-4 text-2xl md:text-3xl">
+          <p className="mt-4 text-xl md:text-2xl">
             I’m passionate about both <strong className='gradient-text text-xl'>Frontend & Backend Development</strong>, always eager to learn new technologies.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mt-6">Beyond Tech, I Enjoy:</h2>
+          <h2 className="text-2xl md:text-2xl font-semibold mt-6">Beyond Tech, I Enjoy:</h2>
           <ul className="mt-4 text-xl space-y-2">
             <li className="flex items-center">
               <span className="text-cyan-500 text-xl mr-2">★</span> Singing
@@ -64,7 +64,7 @@ const About = () => {
               <span className="text-cyan-500 text-xl mr-2">★</span> Fashion
             </li>
           </ul>
-          <p className="mt-4 text-2xl md:text-3xl">
+          <p className="mt-4 text-xl md:text-xl">
             I believe in maintaining a balanced life by indulging in creative hobbies.
           </p>
         </div>
