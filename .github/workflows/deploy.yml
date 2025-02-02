@@ -38,3 +38,6 @@ jobs:
       with:
         branch: gh-pages
         folder: portfolio/dist
+        token: ${{ secrets.GH_DEPLOY_TOKEN }}
+        clean: true
+        force: true
