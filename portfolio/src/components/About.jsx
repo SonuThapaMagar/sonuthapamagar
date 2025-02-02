@@ -32,17 +32,8 @@ const About = () => {
         </h1>
       </div>
 
-      {/* Image Section First */}
-      <div className="flex justify-center mb-8">
-        <img
-          src={sonu}
-          alt="About Me"
-          className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-md object-cover rounded-lg shadow-lg"
-        />
-      </div>
-
-      {/* Content Section */}
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-7xl mx-auto">
+      {/* Content and Image Section */}
+      <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between max-w-7xl mx-auto">
         {/* Left Side (Text Content) */}
         <div className="md:w-1/2 font-inter leading-relaxed px-4">
           <p className="mt-4 text-3xl md:text-4xl">
@@ -76,6 +67,15 @@ const About = () => {
           <p className="mt-4 text-2xl md:text-3xl">
             I believe in maintaining a balanced life by indulging in creative hobbies.
           </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="flex justify-center mb-8 md:mb-0 md:ml-8">
+          <img
+            src={sonu}
+            alt="About Me"
+            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-md object-cover rounded-lg shadow-lg"
+          />
         </div>
       </div>
 

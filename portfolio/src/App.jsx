@@ -1,6 +1,5 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import React, { useState } from "react";
 
 // Import Components
@@ -17,7 +16,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router>
+    <Router basename="/sonuthapamagar">
       {/* Background stars */}
       <div className="fixed inset-0 -z-10">
         <TwinklingStars />
