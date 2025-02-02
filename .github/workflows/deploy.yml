@@ -30,7 +30,7 @@ jobs:
     - name: Build the project
       run: |
         cd portfolio
-        npm run build  
+        npm run build  && npm run build 
        
     # 5. Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
