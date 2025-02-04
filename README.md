@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This website showcases my work as a software developer, highlighting my skills, projects, and experience.
 
 ## About Me
-Hi, I'm Sonu Thapa Magar, a Software Engineering student passionate about building innovative software solutions. I’m learning and working with a variety of technologies, from programming languages like Java and Python to web development frameworks like React and Django. I am driven by the opportunity to solve problems through code and am always looking for ways to grow and expand my knowledge.
+Hi, I'm Sonu Thapa Magar, a Software Engineering student passionate about building innovative software solutions. I’m learning and working with a variety of technologies, web development frameworks like React and Django. I am driven by the opportunity to solve problems through code and am always looking for ways to grow and expand my knowledge.
 
 ## Features
 - Responsive Design
