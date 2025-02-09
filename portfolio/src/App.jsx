@@ -16,7 +16,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router basename="/sonuthapamagar">
+    <Router basename="/">
       {/* Background stars */}
       <div className="fixed inset-0 -z-10">
         <TwinklingStars />
