@@ -54,4 +54,9 @@ Feel free to reach out for any inquiries, collaboration opportunities, or just t
 - **Email**: [sonumagar787@gmail.com](mailto:sonumagar787@gmail.com)
 - **LinkedIn**: [Sonu Thapa Magar](https://www.linkedin.com/in/sonu-thapa-magar-b281b8275/)
 - **GitHub**: [SonuThapaMagar](https://github.com/SonuThapaMagar)
-- **Portfolio** :[Sonu Thapa Magar](https://www.sonutmagar.com.np/)
+
+## Live Demo
+Check out my portfolio live at: [sonutmagar.com.np](https://www.sonutmagar.com.np/)
+
+
+
