@@ -12,7 +12,7 @@ My portfolio is fully responsive and adapts to different screen sizes, providing
 A detailed section where I display my personal and academic projects, with explanations of the technologies I’ve used and links to their respective repositories.
 - About Me Section
 A summary of my academic background, skills, and my journey as a Software Engineering student.
-- Achievement
+- Achievements
 A detailed section of my achievement of various programs and participations.
 
 ## Technologies Used
